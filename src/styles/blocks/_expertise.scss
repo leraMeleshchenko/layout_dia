@@ -3,6 +3,14 @@
   border-radius: 30px;
   &__content {
     padding-block: 72px;
+
+    @include on-tablet {
+      padding-block: 128px;
+    }
+
+    @include on-small-desktop {
+      padding-bottom: 134px;
+    }
   }
 
   &__cards {
@@ -66,6 +74,7 @@
     line-height: 21px;
     text-align: center;
     color: #6c788b;
+    height: 84px;
 
     @include on-tablet {
       max-width: 362px;
